@@ -5,26 +5,102 @@ body {
 
 /* Only modify the styles within the following CSS Rules */
 
+/* Box One 
+This box should have a lightblue background. 
+It should be 100px tall. 
+The text should be centered. 
+There should be no space between the box and the edge of the window on the top, left, and right sides. */
+
 .box-one {
-  
+  background-color: lightblue;
+  height: 100px;
+  text-align: center;
+  margin: 0;
 }
+
+/* Box Two 
+This box should have a lightcyan background. 
+It should be 100px tall. 
+The text should be centered, both horizontally and vertically. 
+There should be 100 pixels of space on either side of the box: left and right. 
+There should be 20 pixels of space on either side of the box: top and bottom. 
+Hint: There are a few ways to center a single line of text vertically. This could use padding, or you can use the line-height property for text. Both can work, but quickly google both ways to make sure you understand them. */
 
 .box-two {
-
+  background-color: lightcyan;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 20px 100px 20px 100px;
 }
+
+/* Box Three 
+This box should have a rgb(32, 178, 170) background. 
+This box should be 500px wide. 
+This box should be as tall as 20% of the total height of the entire view. 
+This box should be horizontally centered. 
+The text should be on the right side, with 10px between the text and the edges of the box. 
+Hint: When setting the height of the box, 20% won't work because the % unit is relative to the parent container. Right now the parent container is the body tag, but the body tag does not have any height! However, there is another CSS unit to help with this that has to do with the "viewport height"... Google for it. */
 
 .box-three {
-
+  background-color: rgb(32, 178, 170);
+  width: 500px;
+  height: 20vh;
+  margin: 0 auto;
+  text-align: right;
+  padding: 10px;
 }
+
+/* Box Four 
+This box should have a #90ee90 background. 
+This box should be 25% of the total page width. 
+This box should be only be as tall as the content. 
+This box should have 20px between it and the boxes above or below it. 
+This box should be horizontally centered. 
+This box should have a solid border, which is 5 pixels wide and the greenyellow color. 
+There should be at least 10 pixels between the text and the edges of the box.  */
 
 .box-four {
-
+  background-color: #90ee90;
+  width: 25vw;
+  margin: 20px auto;
+  border: 5px solid greenyellow;
+  padding: 10px;
 }
+
+/* Box Five
+This box should be 100px wide. 
+This box should be horizontally centered on the page. 
+This box should have a 5 pixel wide and dotted border which is the color #008000. 
+There should be 20 pixels between the text and the border on the top, left, and right sides. 
+There should be 60 pixels between the text and the border on the bottom. */
 
 .box-five {
-
+  width: 100px;
+  margin: 0 auto;
+  border: 5px dotted #008000;
+  padding: 20px 20px 60px 20px;
 }
+
+/* Box Six 
+This box should be 100px wide. 
+This box should be horizontally centered on the page. 
+This box should be moved up 50 pixels ! (Hint: you can use a negative margin). 
+This box should have a 5 pixel wide and dashed border which is the color lime. 
+This box should have 5 pixels between the text and the border on all sides.  */
 
 .box-six {
-
+  width: 100px;
+  margin: -50px auto ;
+  border: 5px dashed lime;
+  padding: 5px;
+  
 }
+/*  
+When you have completed all of those requirements, your site should match the image ! Commit your code and push to Github. 
+
+Reflection Each activity,
+we’ll try to give you something a little extra to think about. Write a short response to this question: 
+
+What is the difference between the padding and the margin? How do those relate to both the border and the inner content?
+*/
